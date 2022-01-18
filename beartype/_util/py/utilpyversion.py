@@ -10,8 +10,8 @@ This private submodule is *not* intended for importation by downstream callers.
 '''
 
 # ....................{ IMPORTS                           }....................
-from sys import version_info
-
+from sys import version_info as sys_version_info
+version_info = (sys_version_info.major, sys_version_info.minor, sys_version_info.micro)
 # See the "beartype.cave" submodule for further commentary.
 __all__ = ['STAR_IMPORTS_CONSIDERED_HARMFUL']
 
